@@ -13,3 +13,7 @@ Input: "I Love Code"
 
 Output: edoC evoL I
 ```
+
+Helpful Materials
+
+- [Reverse Strings in Python: reversed(), Slicing, and More](https://realpython.com/reverse-string-python/)
