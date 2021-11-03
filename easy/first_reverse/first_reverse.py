@@ -1,5 +1,5 @@
 def FirstReverse(strParam):
-  return strParam[::-1]
+  return "".join(reversed(strParam)
 
 # keep this function call here 
 print(FirstReverse(input()))
