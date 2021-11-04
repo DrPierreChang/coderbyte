@@ -9,3 +9,6 @@ Output: 24
 Input: 8
 Output: 40320
 ```
+Materials
+
+- [Arithmetic Functions: Factorials](https://realpython.com/lessons/arithmetic-functions-factorials/)
