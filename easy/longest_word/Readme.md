@@ -12,3 +12,8 @@ Input: "I love dogs"
 
 Output: love
 ```
+
+Materials:
+
+- [Best way to strip punctuation from a string](https://stackoverflow.com/questions/265960/best-way-to-strip-punctuation-from-a-string)
+- [Метод str.translate() в Python, транслирование строки.](https://docs-python.ru/tutorial/operatsii-tekstovymi-strokami-str-python/metod-str-translate/)
