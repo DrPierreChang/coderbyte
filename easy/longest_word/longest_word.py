@@ -1,7 +1,12 @@
+import string
+
+
 def LongestWord(sen):
   longest_word = None
   longest_word_len = 0
-  for word in (i for i in sen.split() if i.isalpha()):
+
+  for word in (sen.translate(str.maketrans('','', string.punctuation))\
+  .split()):
     if len(word) > longest_word_len:
       longest_word = word
       longest_word_len = len(word)
@@ -10,4 +15,3 @@ def LongestWord(sen):
 
 # keep this function call here 
 print(LongestWord(input()))
-# print(LongestWord("fun&!! time"))
