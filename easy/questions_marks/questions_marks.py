@@ -25,14 +25,19 @@ def QuestionsMarks(strParam):
                 tmp_str += i
     
     # when we get all separated parts we need check them for length and sum
+    check = False
     for i in questions_ls:
-        if (int(i[0]) + int(i[-1])) >= 10:
+        if (int(i[0]) + int(i[-1])) == 10:
             if len(i) == 5:
+                check = True
                 continue
             else:
                 return False
-    
-    return True
+
+    if check:
+        return True
+    else:
+        return False
 
 # keep this function call here 
 print(QuestionsMarks(input()))
