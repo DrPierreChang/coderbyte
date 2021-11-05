@@ -10,7 +10,7 @@ def QuestionsMarks(strParam):
     
     # checke every element of string
     for i in seq:
-        # we need separete part of string that includes two numbers and qustions between them
+        # we need separete part of string that includes two numbers and questions between them
         if i.isdigit():
             if not first_num:
                 first_num = i
@@ -19,7 +19,8 @@ def QuestionsMarks(strParam):
                 tmp_str += i
                 questions_ls.append(tmp_str)
                 tmp_str = ""
-                first_num = None
+                tmp_str += i
+                first_num = i
         elif not i.isdigit():
             if first_num:
                 tmp_str += i
