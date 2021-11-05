@@ -1,10 +1,16 @@
 def QuestionsMarks(strParam):
     first_num = None
     questions_ls = []
+    
+    # keep only nums and questions, remove letters
     seq = "".join((i for i in strParam
         if i.isdigit() or not i.isalpha()))
+    
     tmp_str = ""
+    
+    # checke every element of string
     for i in seq:
+        # we need separete part of string that includes two numbers and qustions between them
         if i.isdigit():
             if not first_num:
                 first_num = i
@@ -18,6 +24,7 @@ def QuestionsMarks(strParam):
             if first_num:
                 tmp_str += i
     
+    # when we get all separated parts we need check them for length and sum
     for i in questions_ls:
         if (int(i[0]) + int(i[-1])) >= 10:
             if len(i) == 5:
