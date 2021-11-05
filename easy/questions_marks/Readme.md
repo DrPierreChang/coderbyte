@@ -8,8 +8,12 @@ Examples
 ```
 Input: "aa6?9"
 Output: false
+
 Input: "acc?7??sss?3rr1??????5"
 Output: true
+
+Input "5??aaaaaaaaaaaaaaaaaaa?5?5"
+Output: false
 ```
 Tags
 string manipulationsearchinghash tablefree
